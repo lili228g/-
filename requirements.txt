@@ -1,2 +1,5 @@
-numpy
-scipy
+# NIST SP 800-22 Randomness Tests
+# Required packages for all test modules
+
+numpy>=1.21.0
+scipy>=1.7.0

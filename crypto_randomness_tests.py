@@ -1,3 +1,22 @@
+"""
+NIST SP 800-22 Tests 1, 2 & 5: Frequency and Runs Tests
+
+Test 1 – Frequency (Monobit) Test
+    Determines whether the number of ones and zeros in a sequence is
+    approximately equal, as would be expected for a random sequence.
+    Tests basic randomness at the bit level.
+
+Test 2 – Frequency Test within a Block
+    Divides the sequence into blocks and tests whether the frequency of ones
+    in each block is approximately 50%, as expected for random data.
+
+Test 5 – Runs Test
+    Determines whether the frequency of runs of ones and zeros of various
+    lengths is as expected for a random sequence.
+
+Reference: NIST SP 800-22 Rev 1a, Sections 2.1, 2.2, and 2.3
+"""
+
 import argparse
 import math
 import re

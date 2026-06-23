@@ -1,9 +1,17 @@
 """
-NIST SP 800-22 Rev 1a
-Тест 3: Runs Test (Тест на серии)
-Тест 4: Test for the Longest Run of Ones in a Block (Тест на длиннейшую серию единиц в блоке)
+NIST SP 800-22 Tests 3 & 4: Runs and Longest Run Tests
 
-Использованные библиотеки: argparse, math, re, dataclasses, numpy
+Test 3 – Runs Test
+    Determines whether the frequency of runs of ones and zeros of various
+    lengths is as expected for a random sequence. A run is an uninterrupted
+    sequence of identical bits.
+
+Test 4 – Longest Run of Ones in a Block
+    Tests whether the longest run of ones within M-bit blocks is consistent
+    with what would be expected for a random sequence. The length distribution
+    is compared to theoretical values via chi-square test.
+
+Reference: NIST SP 800-22 Rev 1a, Sections 2.3 and 2.4
 """
 
 import argparse
